@@ -1,0 +1,66 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-family-raleway);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+::selection {
+  background-color: var(--color-green);
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: start;
+}
+.section--with-bg {
+  position: relative;
+  padding: 11rem 0;
+}
+
+.section--with-bg::before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-sectionBackground);
+  width: 100vw;
+  height: 100%;
+  justify-self: center;
+  z-index: -1;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: calc(var(--container-width) + var(--gutter) * 2);
+  display: grid;
+  row-gap: 11rem;
+  padding: 0 var(--gutter);
+}
+
+.video-loop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  opacity: 0.08;
+}
+
+.h2-heading {
+  font-size: var(--font-size-65);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 8.7rem;
+  grid-column: 1/-1;
+}
+
+.h3-heading {
+  font-size: var(--font-size-38);
+  font-weight: var(--font-weight-semi-bold);
+}

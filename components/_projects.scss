@@ -1,0 +1,26 @@
+.projects__main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7.5rem;
+  row-gap: 7.5rem;
+  align-items: center;
+}
+.projects__main h3 {
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 2.5rem;
+}
+.projects__pic {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+
+.projects__description {
+  line-height: 1.5;
+}
+
+.projects__link {
+  color: var(--color-darker-blue);
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-medium);
+  margin-top: 2.3rem;
+}

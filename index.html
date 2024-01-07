@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS link file -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Anas Khaled</title>
+  </head>
+  <body>
+    <div class="container">
+      <video class="video-loop" autoplay loop muted>
+        <source src="./videos/video-loop.mp4" type="video/mp4" />
+      </video>
+      <header class="header">
+        <label for="burger-menu__checkbox" class="burger-menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+        <input
+          id="burger-menu__checkbox"
+          class="burger-menu__checkbox"
+          type="checkbox"
+        />
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a href="#bio" class="navigation__link navigation__bio">Bio</a>
+            </li>
+            <li>
+              <a href="#skills" class="navigation__link navigation__skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="#media" class="navigation__link navigation__media"
+                >Media</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="navigation__link navigation__projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#clients" class="navigation__link navigation__clients"
+                >My Clients</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="navigation__link navigation__contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="toggle">
+          <h3 class="toggle__title">Switch Theme</h3>
+          <input
+            type="checkbox"
+            name="check box"
+            id="toggle"
+            class="toggle__checkbox"
+          />
+          <label for="toggle" class="toggle__label"></label>
+        </div>
+      </header>
+      <section id="bio" class="bio section">
+        <div class="bio__data">
+          <h1 class="bio__heading">
+            Hi There, I’M A Passionate Software Engineer
+          </h1>
+          <p class="bio__objective">
+            My name is <span class="bio__name">Anas Khaled</span>, Front-end
+            Engineer who publish content on
+            <a
+              href="https://www.linkedin.com/in/anas-khaled-5b705a157/"
+              class="bio__linkedin"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+          <a href="#contact" class="bio__links say-hi-link">Say Hi</a>
+          <a
+            href="./files/Anas khaled resume.pdf"
+            class="bio__links fint-out-link"
+            target="_blank"
+            >Download CV <span class="bio__arrow">↓</span></a
+          >
+        </div>
+        <div class="bio__pic-content">
+          <img
+            src="images/personal-pic.png"
+            alt="image of anas khaled"
+            class="bio__pic"
+          />
+        </div>
+      </section>
+      <section id="skills" class="skills section section--with-bg">
+        <h2 class="h2-heading">SKILLS</h2>
+        <ul class="skills__list">
+          <li class="skills__items">
+            <h3 class="h3-heading">HTML</h3>
+            <span class="skills__years">1 year</span>
+          </li>
+          <li class="skills__items">
+            <h3 class="h3-heading">CSS</h3>
+            <span class="skills__years">1 year</span>
+          </li>
+          <li class="skills__items">
+            <h3 class="h3-heading">Javascript</h3>
+            <span class="skills__years">1 year</span>
+          </li>
+          <li class="skills__items">
+            <h3 class="h3-heading">React</h3>
+            <span class="skills__years">1 year</span>
+          </li>
+        </ul>
+      </section>
+      <section id="media" class="media section">
+        <video class="media__video" poster="images/thumbnail.jpg" controls>
+          <source src="./videos/video.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section id="projects" class="projects section">
+        <h2 class="h2-heading">MY FEATURED <br />PROJECTS</h2>
+        <div class="projects__main">
+          <img
+            src="./images/project-1.jpg"
+            alt="project one image"
+            class="projects__pic"
+          />
+
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              Quran Tab <br />
+              Extension
+            </h3>
+            <p class="projects__description">
+              Quran Tab is an Islamic new tab page that will keep you inspired
+              by a verse from the Quran every time you open a new tab that helps
+              you achieve your "Khatma" and keeps you connected with the words
+              of Allah.
+            </p>
+            <a
+              href="https://chromewebstore.google.com/detail/quran-tab/afaihcdgkjebgabomemccdneglknjkdd"
+              class="projects__link"
+              target="_blank"
+              >Chrome Link</a
+            >
+            <span>&nbsp;-&nbsp;</span>
+            <a
+              href="https://microsoftedge.microsoft.com/addons/detail/quran-tab/hnfepfakgcalolgicjdfmaaellnondji"
+              class="projects__link"
+              target="_blank"
+              >Edge Link</a
+            >
+          </div>
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              Quran Station <br />
+              Extension
+            </h3>
+            <p class="projects__description">
+              Small extension that gives you access to over 100 stations to help
+              you listen to the Quran from your favorite reciters easily
+              Quran-Station has over 100 stations to help you listen to the
+              Quran from your favorite reciters in a quick and easy way.
+            </p>
+            <a
+              href="https://chromewebstore.google.com/detail/quran-station/angdimijeelplemmdnedhnjidadfphom"
+              class="projects__link"
+              target="_blank"
+              >Chrome Link</a
+            >
+            <span>&nbsp;-&nbsp;</span>
+            <a
+              href="https://addons.mozilla.org/en-US/firefox/addon/quran-station/"
+              class="projects__link"
+              target="_blank"
+              >Firefox Link</a
+            >
+            <span>&nbsp;-&nbsp;</span>
+            <a
+              href="https://microsoftedge.microsoft.com/addons/detail/quran-station/ebhikjobpdpkkaimiebhdlmfhogobbaf"
+              class="projects__link"
+              target="_blank"
+              >Edge Link</a
+            >
+          </div>
+
+          <img
+            src="./images/project-2.jpg"
+            alt="project two image"
+            class="projects__pic"
+          />
+        </div>
+      </section>
+      <section class="clients section section--with-bg" id="clients">
+        <h2 class="h2-heading">
+          WHAT MY <br />
+          CLIENTS SAYS.
+        </h2>
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <p class="clients__opinion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              facilis quidem optio assumenda quibusdam enim iusto explicabo
+              porro, quas eaque laborum amet minima rerum voluptas! Consectetur
+              tempora ratione quos laboriosam?
+            </p>
+            <p class="clients__opinion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              facilis quidem optio assumenda quibusdam enim iusto explicabo
+              porro, quas eaque laborum amet minima rerum voluptas! Consectetur
+              tempora ratione quos laboriosam?
+            </p>
+            <p class="clients__opinion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              facilis quidem optio assumenda quibusdam enim iusto explicabo
+              porro, quas eaque laborum amet minima rerum voluptas! Consectetur
+              tempora ratione quos laboriosam?
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact section" id="contact">
+        <div>
+          <p class="contact__description">
+            Feel free to reach out to me any time. I prefer to talk over email,
+            especially since we may be a few time zones away.
+          </p>
+          <a class="contact__mail" href="mailto:anaskhaled98@gmail.com"
+            >anaskhaled98@gmail.com</a
+          >
+          <div class="contact__icons">
+            <a
+              href="https://www.linkedin.com/in/anas-khaled-5b705a157/"
+              class="contact__icon"
+              target="_blank"
+              ><img
+                src="../advanced css project/images/brand/LinkedIn.svg"
+                alt="linkedin account"
+            /></a>
+            <a
+              href="https://github.com/anaskhaled98"
+              class="contact__icon"
+              target="_blank"
+              ><img src="./images/brand/github.svg" alt="github account"
+            /></a>
+          </div>
+        </div>
+        <div class="contact__form">
+          <h2 class="h2-heading">LET'S WORK <br />TOGETHER</h2>
+          <form action="results.html">
+            <div class="contact__inputs">
+              <input
+                class="contact__input"
+                type="text"
+                placeholder="Full Name"
+                required
+                name="fullName"
+              />
+              <input
+                class="contact__input"
+                type="tel"
+                placeholder="phone No."
+                pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+                required
+                name="telephone"
+              />
+            </div>
+            <textarea
+              class="contact__input contact__text-area"
+              name="description"
+              id="description"
+              rows="1"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <input class="contact__btn" type="submit" value="Send Messsage" />
+          </form>
+        </div>
+      </section>
+      <footer class="footer">@ 2023 by Anas Khaled</footer>
+    </div>
+  </body>
+</html>
