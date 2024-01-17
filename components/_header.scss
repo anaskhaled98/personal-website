@@ -1,0 +1,104 @@
+.header {
+  padding: 3rem 0;
+  position: sticky;
+  display: flex;
+  z-index: 10;
+  top: 0;
+  justify-content: center;
+}
+
+.header::before {
+  /*Before respects flex when parent's position become relative*/
+  background-color: var(--color-background);
+  content: "";
+  position: absolute;
+  border-bottom: 0.1rem solid var(--color-input-border);
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  z-index: 0;
+}
+
+.navigation {
+  z-index: 1;
+  transition: var(--transition-timing);
+}
+
+.navigation__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+  text-decoration: underline;
+  color: var(--color-text);
+}
+
+.container:has(#bio:target) .navigation__bio,
+.container:has(#skills:target) .navigation__skills,
+.container:has(#media:target) .navigation__media,
+.container:has(#projects:target) .navigation__projects,
+.container:has(#clients:target) .navigation__clients,
+.container:has(#contact:target) .navigation__contact {
+  color: var(--color-blue);
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+}
+
+.burger-menu__checkbox {
+  display: none;
+}
+
+/* Toggle */
+.toggle {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  z-index: 1;
+}
+.toggle__title {
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-18);
+}
+
+.toggle__checkbox {
+  display: none;
+}
+
+.toggle__label {
+  display: block;
+  position: relative;
+  background-color: var(--color-black);
+  width: 4.5rem;
+  height: 2.2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  padding: 0.3rem 0.4rem;
+  transition: all 0.3s;
+}
+
+.toggle__label::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: var(--color-white);
+  transition: all 0.3s;
+}
+
+.toggle__checkbox:checked + .toggle__label {
+  background-color: var(--color-white);
+}
+
+.toggle__checkbox:checked + .toggle__label::after {
+  background-color: var(--color-green);
+  transform: translateX(2.1rem);
+}
